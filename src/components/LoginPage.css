@@ -1,0 +1,390 @@
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+  
+  /* background-image: linear-gradient(to right, #331c52, #291C3A); */
+
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-image: linear-gradient(to right, #8121D0, #291C3A);
+  color: #fff;
+  font-weight: bolfd;
+}
+
+.left-nav,
+.right-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.left-nav {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.right-nav {
+  justify-content: flex-end;
+}
+
+.left-nav li,
+.right-nav li {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.left-nav li:hover,
+.right-nav li:hover {
+  transform: scale(1.1);
+}
+
+/* Main Content */
+
+.main {
+  color: #ccc;
+  background-color: #e1ebed;
+}
+
+/* Home Section */
+
+.home {
+  height: 100vh;
+  text-align: left;
+  background-image: linear-gradient(to right, #331c52, #291C3A);
+  width: 100%;
+
+  
+}
+.h-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 20px;
+}
+.head1{
+  font-size: 40px;
+  color: #fff;
+}
+.head2{
+  font-size: 70px;
+  color: #ddbbfc;
+}
+.head3{
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.home h1,
+.home h2,
+.home h3 {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px 0 0;
+  padding: 10px;
+  border-radius: 60%;
+  color: #291C3A;
+  text-decoration: none;
+  background-color: #ddbbfc;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  background-color: #ddbbfc;
+}
+
+.icon {
+  font-size: 20px;
+  
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-nav,
+  .right-nav {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .right-nav {
+    margin-top: 10px;
+  }
+}
+
+/* Include Font Awesome icons */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+/* Animations (using `animate.css`) */
+
+.animate__animated {
+  animation-duration: 1s;
+}
+
+.animate__zoomIn {
+  animation-name: zoomIn;
+}
+
+.animate__pulse {
+  animation-name: pulse;
+}
+
+/* You might need to include `animate.css` in your project for animations to work */
+.about{
+  
+  margin-left: 5%;
+}
+.about h1{
+  color: #291C3A;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 30px 0 10px;
+}
+.about p{
+  color: #331c52;
+}
+.skills{
+  margin-left: 60%;
+}
+.skills h1{
+  color: rgb(21, 1, 36);
+  font-size: 30px;
+  font-weight: 600;
+}
+.skills p{
+  color:#331c52;
+  font-size: 18px;
+  font-weight: 400;
+}
+.s-icons{
+  display: flex;
+  transition: all .3s;
+}
+/* .s-icons:hover{
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+} */
+.s-icon{
+  height: 60px;
+  width: 60px;
+  background-color: #ddbbfc;
+  color: #291C3A;
+  margin: 5px;
+  padding: 4px;
+  border-radius: 5px;
+  
+  border-radius: 10px;
+  transition: all .2s;
+}
+
+/* .s-icon:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+} */
+
+.projects{
+  margin-left: 5%;
+  padding: 40px 0;
+}
+.projects h1{
+  color: rgb(21, 1, 36);
+  font-size: 30px;
+  font-weight: 600;
+
+}
+.projects p{
+  color:#331c52;
+  font-size: 18px;
+  font-weight: 400;
+}
+.project-section{
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+.menu-item-card {
+  
+  width: 100%; /* Setting width */
+  max-width: 250px;
+  height: 100%;
+  max-height: 450px; /* Maximum width */
+  padding: 15px; /* Adding padding */
+  margin-bottom: 20px; /* Adding margin bottom */
+  margin-left: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+}
+
+
+.menu-item-image {
+  width: 100%; /* Setting image width */
+  height: auto; /* Maintaining aspect ratio */
+  display: block; /* Ensuring block display */
+}
+
+.menu-card-title {
+  font-size: 18px; /* Setting font size */
+  margin-top: 10px; /* Adding margin top */
+}
+
+.menu-item-link {
+  display: flex; /* Using flexbox */
+  align-items: center; /* Aligning items */
+  color: #d0b200; /* Setting text color */
+  text-decoration: none; /* Removing underline */
+  font-weight: bold; /* Setting font weight */
+}
+
+.menu-item-link svg {
+  margin-left: 5px; /* Adding margin to the SVG */
+}
+
+ /* contact page */
+ .contact-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.left-side {
+  flex: 1;
+  text-align: center;
+}
+
+.left-side h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  animation: title-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes title-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input-container label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: none; /* Disable resize for textarea */
+}
+
+.submit-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+/* Social Media Icons */
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #ccc;
+  transition: color 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  color: #3498db;
+}
+
+/* Optional: Form submission animation (replace with your animation library if needed) */
+
+.form-submitted {
+  opacity: 0.5;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.footer{
+text-align: center;
+background-image: linear-gradient(to right, #331c52, #291C3A);
+padding: 20px;
+color: #ffffff;
+margin-bottom: -20px;
+} 
